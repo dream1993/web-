@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html>
+<head>
+    {meta}
+    <title>{webtitle}</title>
+    <meta name="keywords" content="{keywords}" />
+    <meta name="description" content="{Description}" />
+    <link rel="stylesheet" type="text/css" href="/css/style.reset.css" />
+    <link href="/css/com.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css" />
+    <link href="/css/case.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/mfen.css" />
+</head>
+
+<body style="">
+    <div class="wraper">
+       {head}
+
+        <div class="ba-box headTop">
+            <div class="banner">
+                <img src="/images/case_banner_02.jpg">
+                <h2 class="animated fadeInDownBig">我们只制作美丽的网站</h2>
+                <div class="case-line animated fadeInDownBig1"></div>
+                <h3><div class="bg-line fadeInLeftBig animated animated-d01" style="background:#202020;"></div><span class="animated fadeInDownBig2">We only make beautiful websites</span><div class="bg-line bg-line-right fadeInRightBig animated animated-d01" style="background:#202020"></div></h3>
+                <p class="animated bounceInUp animated-d01">We will be here to share with you our best results ，Many customers chose us </p>
+                <p class="p2 animated bounceInUp animated-d01">believe in yourself, our unique will bring you a new feeling</p>
+            </div>
+        </div>
+        <div class="customer">
+            <div class="customer-title">
+                <h2>分享的客户</h2>
+                <p style="margin-top: 4px;">众多客户选择了我们，相信自己，我们的与众不同将给您带来全新的感受</p>
+            </div>
+            <div class="customer-box">
+
+                <div class="customer-box-brand clearfix">
+                    <ul>
+                       {casenav}
+                    </ul>
+                    <a class="right-bar">分享行业，点我！</a>
+                </div>
+                <div class="customer-box-intru clearfix">
+                    <ul>
+                      {case_list}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-box clearfix">
+            {page}
+        </div>
+        <div class="xingdong ">
+            <h2>Echocardiography action!</h2>
+            <h3>心动不如行动!</h3>
+            <i class="red-line"></i>
+            <p>相信我们，等于相信你自己</p>
+            <a class="wyzx-btn" href="">我要咨询</a>
+            <p>TEL:010-53672115 E-mail: admin@echuanwl.com</p>
+        </div>
+        {foot}
+    </div>
+    {right}
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/commen.js"></script>
+    <script>
+        $(".customer-box .customer-box-brand ul li").click(function () {
+            $(this).addClass("on").siblings().removeClass("on");
+
+        });
+    </script>
+</body>
+</html>

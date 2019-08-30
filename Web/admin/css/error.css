@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+.error h3{
+	font-size:16px;
+	color:#222;
+	font-weight: normal;
+}
+.error p{
+	line-height: 10px;
+	color:red;
+}
+.error .btn a{
+	color:#666;
+}
+.error .btn a:hover{
+	color:#222;
+}

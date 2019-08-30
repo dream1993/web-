@@ -1,0 +1,192 @@
+@CHARSET "UTF-8";
+.web tr td input,.web tr td textarea{width:100%;}
+.web tr th{text-align:right;}
+.dimg ,.upload{width:100px;height:100px;display:block;text-align:center;line-height:100px;border:1px solid #ccc;color:#666;margin-right:10px;float:left; position:relative}
+.upload img,.dimg img{max-width:98px;max-height:98px;}
+.upload .close,.dimg .close{width:20px;height:20px;position:absolute;top:5px;right:5px;}
+.today{
+	width:100%;
+	height:90px;
+	margin-bottom: 20px;
+}
+#upload{width:100px;height:100px;display:inline-block;text-align:center;line-height:100px;border:1px solid #ccc;color:#666}
+#upload img{max-width:98px;max-height:98px;}
+#uploadpic{width:100px;height:100px;display:inline-block;text-align:center;line-height:100px;border:1px solid #ccc;color:#666}
+#uploadpic img{max-width:98px;max-height:98px;}
+
+.today-left{
+	width:60%;
+	height:100%;
+	float:left;
+}
+.today-left-content{
+	width:100%;
+	height:100%;
+	background: #000;
+}
+.today-left-content ul,.today-right-content ul{
+	text-align: center;
+	line-height: 1.6;
+	width:100%;
+	height:100%;
+}
+.today-left-content ul{
+	background-color: #7cbae5;
+	border: 1px solid #6eb0dd;
+}
+.today-left-content ul li{
+	width:50%;
+	height:100%;
+	float:left;
+}
+.today-left-content ul li:hover{
+	background-color: #73afd9;
+}
+.today-left-content ul li a,.today-right-content ul li a{
+	color:#fff;
+	font-size: 16px;
+	padding:10px 0;
+	display: block;
+	text-decoration: none;
+}
+.today-left-content ul li a span{
+	display: block;
+	border-left: 1px solid #6fa7ce;
+	height:70px;
+}
+.today-left-content ul li:first-child a span{
+	border-left-width: 0;
+}
+.today-left-content ul li:first-child a span i.icon{
+	background: url("../images/icon-home.png") 0 0  no-repeat;
+}
+.today-left-content ul li a span i.icon{
+	background: url("../images/icon-home.png") 0 -44px no-repeat;
+	margin-top: 8px;
+	width: 34px;
+	height: 34px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.today-left-content ul li a span em.number,.today-right-content ul li a span em.number{
+	font-weight: 400;
+	font-style: normal;
+	vertical-align: middle;
+	font-size: 35px;
+	padding-top:10px;
+}
+.today-left-content ul li a span i.title,.today-right-content ul li a span i.title{
+	display: block;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	letter-spacing: 2px;
+	margin-top: -10px;
+}
+
+
+.today-right{
+	width:40%;
+	height:100%;
+	float:right;
+	padding-left: 20px;
+}
+.today-right-content{
+	width:100%;
+	height:100%;
+	background: #000;
+}
+.today-right-content ul{
+	background-color: #60d295;
+	border: 1px solid #57c78b;
+}
+
+.today-right-content ul li{
+	width:100%;
+	height:100%;
+}
+.today-right-content ul li:hover{
+	background-color: #58c88d;
+}
+.today-right-content ul li a span{
+	display: block;
+	height:70px;
+}
+.today-right-content ul li a span i.icon{
+	background: url("../images/icon-home.png") 0 -88px no-repeat;
+	margin-top: 8px;
+	width: 34px;
+	height: 34px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.message{color:#ff0000;}
+.home-box{
+
+}
+.home-box-left,.home-box-right{
+	width:50%;
+	line-height: 40px;
+	float: left;
+}
+.home-box-left{
+	padding-right: 10px;
+}
+.home-box-right{
+	padding-left: 10px;
+}
+.home-box-left dl,.home-box-right dl{
+	border: 1px solid #e7e7eb;
+	margin-bottom: 20px;
+}
+.home-box dt{
+	padding: 0 20px;
+	background-color: #f4f5f9;
+	border-bottom: 1px solid #e7e7eb;
+	line-height: 40px;
+}
+.home-box dt span{
+	float:right;
+}
+.home-box dt span a{
+	font-size: 12px;
+	color:#666;
+}
+.home-box dd{
+	border-top: 1px solid #e7e7eb;
+	font-size: 14px;
+}
+.home-box dt+dd{
+	border-top-width: 0;
+}
+.home-box dd a{
+	display: block;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: #222;
+	text-decoration: none;
+	cursor: pointer;
+}
+.home-box dd a:hover{
+	color:#459ae9;
+}
+.home-box dd span{
+	color: #666;
+	float:right;
+}
+.home-box dd a i.new{
+	margin-left: 6px;
+	
+	width: 18px;
+	height: 12px;
+	vertical-align: middle;
+	display: inline-block;
+	line-height: 100px;
+	overflow: hidden;
+}
+
+
+
+
+
+

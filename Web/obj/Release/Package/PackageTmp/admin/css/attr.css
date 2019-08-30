@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+table.attr th{
+	text-align: right;
+	font-weight: normal;
+}
+table.attr td{
+	text-align: left;
+	position: relative;
+	background: #fff;
+}
+table.attr td i.loading{
+	width:16px;
+	height:16px;
+	background:url(../images/loading.gif) 0 0 no-repeat;
+	display:none;
+	position: absolute;
+	left:260px;
+	top:8px;
+}
+table.attr td span.error{
+	position: absolute;
+	left:260px;
+	top:8px;
+	font-size: 12px;
+	color:red;
+	display:none;
+}
+table.attr td input{
+	width:250px;
+	height:25px;
+}
+
+table.attr td select{
+	width:250px;
+	height:25px;
+}
+table.attr td textarea{
+	width:100%;
+	border:1px solid #eee;
+}
+table.attr td .moreAttrWrite{
+	color:#666;
+	font-size:12px;
+	padding:10px 0 0;
+	display:block;
+}
+table.attr td .moreAttrWrite i{
+	color:#999;
+	font-style: normal;
+}
+table.attr td div.nav{
+	padding:10px 0;
+}
+table.attr td div.nav span.title{
+	font-weight: bold;
+	width:8em;
+	text-align: right;
+	display:inline-block;
+}
+
+
+

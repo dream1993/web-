@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+table.manager th{
+	text-align: right;
+	font-weight: normal;
+}
+table.manager td{
+	text-align: left;
+	position: relative;
+	background: #fff;
+}
+table.manager td i.loading{
+	width:16px;
+	height:16px;
+	background:url(../images/loading.gif) 0 0 no-repeat;
+	display:none;
+	position: absolute;
+	left:260px;
+	top:8px;
+}
+table.manager td span.error{
+	position: absolute;
+	left:260px;
+	top:8px;
+	font-size: 12px;
+	color:red;
+	display:none;
+}
+table.manager td input{
+	width:250px;
+	height:25px;
+}
+
+table.manager td select{
+	width:250px;
+	height:25px;
+}

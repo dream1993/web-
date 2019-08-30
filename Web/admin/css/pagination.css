@@ -1,0 +1,41 @@
+#page {
+	text-align:center;
+	padding:20px;
+}
+#page a {
+	color:#335B64;
+	border:1px solid #00c0ff;
+	margin:0 2px;
+	text-decoration: none;	
+	color:#00c0ff;
+}
+#page a,#page span{
+	border-radius:2px;
+	padding:5px 8px 2px;
+}
+#page a:hover {
+	color:#fff;
+	border:1px solid #00c0ff;
+	background:#00c0ff;
+}
+#page span.me{
+	color:#fff;
+	border:1px solid #44b549;
+	background:#44b549;
+}
+#page span.disabled {
+	border:1px solid #ccc;
+	margin:0 2px;
+	color:#ccc;
+}
+#page span.me {
+	margin:0 2px;
+}
+#page select.select {
+	width:120px;
+	background:#fff;
+	border:1px solid #ccc;
+}
+#page select.select optgroup {
+	font-style:normal;
+}

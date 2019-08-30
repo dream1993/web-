@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+table.management th{
+	text-align: right;
+	font-weight: normal;
+}
+table.management td{
+	text-align: left;
+	position: relative;
+	background: #fff;
+}
+table.management td i.loading{
+	width:16px;
+	height:16px;
+	background:url(../images/loading.gif) 0 0 no-repeat;
+	display:none;
+	position: absolute;
+	left:260px;
+	top:8px;
+}
+table.management td span.error{
+	position: absolute;
+	left:260px;
+	top:8px;
+	font-size: 12px;
+	color:red;
+	display:none;
+}
+table.management td input{
+	width:250px;
+	height:25px;
+}
+
+table.management td select{
+	width:250px;
+	height:25px;
+}
+table.management td textarea{
+	border:1px solid #ccc;
+}

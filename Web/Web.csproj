@@ -1,0 +1,1465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93C74246-C670-40BE-B795-A2BC3607E398}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ueditor\net\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="admin\css\attr.css" />
+    <Content Include="admin\css\brand.css" />
+    <Content Include="admin\css\error.css" />
+    <Content Include="admin\css\global.css" />
+    <Content Include="admin\css\goods.css" />
+    <Content Include="admin\css\index.css" />
+    <Content Include="admin\css\level.css" />
+    <Content Include="admin\css\login.css" />
+    <Content Include="admin\css\main.css" />
+    <Content Include="admin\css\management.css" />
+    <Content Include="admin\css\manager.css" />
+    <Content Include="admin\css\nav.css" />
+    <Content Include="admin\css\pagination.css" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\images\addGoodsPics.png" />
+    <Content Include="admin\images\delPics.png" />
+    <Content Include="admin\images\icon-home.png" />
+    <Content Include="admin\images\index-dldt.png" />
+    <Content Include="admin\images\is_up.png" />
+    <Content Include="admin\images\is_up2.png" />
+    <Content Include="admin\images\loading.gif" />
+    <Content Include="admin\images\logo.png" />
+    <Content Include="admin\images\nav-plus.png" />
+    <Content Include="admin\images\no-logo.gif" />
+    <Content Include="admin\images\upload-icon.png" />
+    <Content Include="admin\img\1.jpg" />
+    <Content Include="admin\img\2.jpg" />
+    <Content Include="admin\img\3.jpg" />
+    <Content Include="admin\img\4.jpg" />
+    <Content Include="admin\img\5.jpg" />
+    <Content Include="admin\img\add.png" />
+    <Content Include="admin\img\admin.png" />
+    <Content Include="admin\img\bg03.jpg" />
+    <Content Include="admin\img\bg_Rbtn.png" />
+    <Content Include="admin\img\bg_Sbtn.png" />
+    <Content Include="admin\img\bg_th.png" />
+    <Content Include="admin\img\btn_upload.gif" />
+    <Content Include="admin\img\close.png" />
+    <Content Include="admin\img\delete.png" />
+    <Content Include="admin\img\delimg.gif" />
+    <Content Include="admin\img\down.gif" />
+    <Content Include="admin\img\edit.png" />
+    <Content Include="admin\img\file.png" />
+    <Content Include="admin\img\fine\false.png" />
+    <Content Include="admin\img\fine\true.png" />
+    <Content Include="admin\img\huang.png" />
+    <Content Include="admin\img\ico\1.png" />
+    <Content Include="admin\img\ico\10.png" />
+    <Content Include="admin\img\ico\11.png" />
+    <Content Include="admin\img\ico\12.png" />
+    <Content Include="admin\img\ico\13.png" />
+    <Content Include="admin\img\ico\14.png" />
+    <Content Include="admin\img\ico\15.png" />
+    <Content Include="admin\img\ico\16.png" />
+    <Content Include="admin\img\ico\17.png" />
+    <Content Include="admin\img\ico\18.png" />
+    <Content Include="admin\img\ico\19.png" />
+    <Content Include="admin\img\ico\2.png" />
+    <Content Include="admin\img\ico\20.png" />
+    <Content Include="admin\img\ico\3.png" />
+    <Content Include="admin\img\ico\4.png" />
+    <Content Include="admin\img\ico\5.png" />
+    <Content Include="admin\img\ico\6.png" />
+    <Content Include="admin\img\ico\7.png" />
+    <Content Include="admin\img\ico\8.png" />
+    <Content Include="admin\img\ico\9.png" />
+    <Content Include="admin\img\loading.gif" />
+    <Content Include="admin\img\loading2.gif" />
+    <Content Include="admin\img\login.gif" />
+    <Content Include="admin\img\logo.png" />
+    <Content Include="admin\img\picsee.png" />
+    <Content Include="admin\img\recycle.png" />
+    <Content Include="admin\img\recycle_delete.png" />
+    <Content Include="admin\img\search.png" />
+    <Content Include="admin\img\status_error.png" />
+    <Content Include="admin\img\status_info.png" />
+    <Content Include="admin\img\status_result.png" />
+    <Content Include="admin\img\title.gif" />
+    <Content Include="admin\img\up.gif" />
+    <Content Include="admin\img\update.png" />
+    <Content Include="admin\img\zi.png" />
+    <Content Include="admin\js\down.js" />
+    <Content Include="admin\js\essaypublic.js" />
+    <Content Include="admin\js\goods.js" />
+    <Content Include="admin\js\imgpublic.js" />
+    <Content Include="admin\js\index.js" />
+    <Content Include="admin\js\jquery.form.min.js" />
+    <Content Include="admin\js\jquery2.1.4.min.js" />
+    <Content Include="admin\js\login.js" />
+    <Content Include="admin\js\manager.js" />
+    <Content Include="admin\js\modal.js" />
+    <Content Include="admin\js\nav.js" />
+    <Content Include="admin\js\supersized-init.js" />
+    <Content Include="admin\js\supersized.3.2.7.min.js" />
+    <Content Include="admin\js\ueditor.js" />
+    <Content Include="admin\js\uploadBaidu.js" />
+    <Content Include="admin\js\uploadOne.js" />
+    <Content Include="admin\js\users.js" />
+    <Content Include="admin\main\default.aspx" />
+    <Content Include="admin\main\home.aspx" />
+    <Content Include="admin\management\add.aspx" />
+    <Content Include="admin\management\default.aspx" />
+    <Content Include="admin\management\roleright.aspx" />
+    <Content Include="admin\management\update.aspx" />
+    <Content Include="admin\manager\add.aspx" />
+    <Content Include="admin\manager\default.aspx" />
+    <Content Include="admin\manager\sql.aspx" />
+    <Content Include="admin\manager\update.aspx" />
+    <Content Include="admin\manager\uppwd.aspx" />
+    <Content Include="admin\message\add.aspx" />
+    <Content Include="admin\message\default.aspx" />
+    <Content Include="admin\message\update.aspx" />
+    <Content Include="admin\style\reset.css" />
+    <Content Include="admin\style\style.css" />
+    <Content Include="admin\style\supersized.css" />
+    <Content Include="admin\type\add.aspx" />
+    <Content Include="admin\type\default.aspx" />
+    <Content Include="admin\type\update.aspx" />
+    <Content Include="admin\web\allAgent\add.aspx" />
+    <Content Include="admin\web\allAgent\default.aspx" />
+    <Content Include="admin\web\allAgent\update.aspx" />
+    <Content Include="admin\web\default.aspx" />
+    <Content Include="admin\web\demo.aspx" />
+    <Content Include="admin\web\desc\add.aspx" />
+    <Content Include="admin\web\desc\default.aspx" />
+    <Content Include="admin\web\desc\update.aspx" />
+    <Content Include="admin\web\message\default.aspx" />
+    <Content Include="admin\web\message\update.aspx" />
+    <Content Include="admin\web\down\add.aspx" />
+    <Content Include="admin\web\down\default.aspx" />
+    <Content Include="admin\web\down\update.aspx" />
+    <Content Include="admin\web\js\website.js" />
+    <Content Include="admin\web\news\add.aspx" />
+    <Content Include="admin\web\news\default.aspx" />
+    <Content Include="admin\web\news\update.aspx" />
+    <Content Include="admin\web\other\add.aspx" />
+    <Content Include="admin\web\other\default.aspx" />
+    <Content Include="admin\web\other\update.aspx" />
+    <Content Include="admin\web\pic\add.aspx" />
+    <Content Include="admin\web\pic\default.aspx" />
+    <Content Include="admin\web\pic\update.aspx" />
+    <Content Include="admin\web\icase\add.aspx" />
+    <Content Include="admin\web\icase\default.aspx" />
+    <Content Include="admin\web\icase\update.aspx" />
+    <Content Include="admin\web\pro\add.aspx" />
+    <Content Include="admin\web\pro\default.aspx" />
+    <Content Include="admin\web\pro\update.aspx" />
+    <Content Include="admin\web\product\add.aspx" />
+    <Content Include="admin\web\product\default.aspx" />
+    <Content Include="admin\web\product\update.aspx" />
+    <Content Include="case.html" />
+    <Content Include="caseShow.html" />
+    <Content Include="caseShow\case01.html" />
+    <Content Include="caseShow\case02.html" />
+    <Content Include="caseShow\case03.html" />
+    <Content Include="caseShow\case04.html" />
+    <Content Include="caseShow\case05.html" />
+    <Content Include="caseShow\case06.html" />
+    <Content Include="caseShow\case07.html" />
+    <Content Include="caseShow\case08.html" />
+    <Content Include="caseShow\case09.html" />
+    <Content Include="caseShow\case10.html" />
+    <Content Include="caseShow\case11.html" />
+    <Content Include="caseShow\case12.html" />
+    <Content Include="caseShow\case13.html" />
+    <Content Include="caseShow\case14.html" />
+    <Content Include="caseShow\case15.html" />
+    <Content Include="caseShow\case16.html" />
+    <Content Include="caseShow\case17.html" />
+    <Content Include="caseShow\case18.html" />
+    <Content Include="caseShow\case19.html" />
+    <Content Include="caseShow\case20.html" />
+    <Content Include="caseShow\case21.html" />
+    <Content Include="caseShow\case22.html" />
+    <Content Include="caseShow\case23.html" />
+    <Content Include="caseShow\case24.html" />
+    <Content Include="caseShow\case25.html" />
+    <Content Include="caseShow\case26.html" />
+    <Content Include="caseShow\case27.html" />
+    <Content Include="caseShow\case28.html" />
+    <Content Include="caseShow\case29.html" />
+    <Content Include="caseShow\case29_wdlc.html" />
+    <Content Include="caseShow\case30_xgll.html" />
+    <Content Include="caseShow\case31_xjjj.html" />
+    <Content Include="caseShow\case32_xnrd.html" />
+    <Content Include="caseShow\case33_ywcf.html" />
+    <Content Include="caseShow\case34_ywcfapp.html" />
+    <Content Include="caseShow\case35_ydrz.html" />
+    <Content Include="caseShow\case36_tyxx.html" />
+    <Content Include="caseShow\case37_xhapp.html" />
+    <Content Include="caseShow\case38_yjl.html" />
+    <Content Include="caseShow\case39_yccp.html" />
+    <Content Include="caseShow\case40_yygj.html" />
+    <Content Include="caseShow\case41_cl.html" />
+    <Content Include="caseShow\case42_dj.html" />
+    <Content Include="caseShow\case43_et.html" />
+    <Content Include="caseShow\case44_gg.html" />
+    <Content Include="caseShow\case45_xh.html" />
+    <Content Include="case\10.html" />
+    <Content Include="case\11.html" />
+    <Content Include="case\12.html" />
+    <Content Include="case\13.html" />
+    <Content Include="case\14.html" />
+    <Content Include="case\15.html" />
+    <Content Include="case\16.html" />
+    <Content Include="case\17.html" />
+    <Content Include="case\18.html" />
+    <Content Include="case\19.html" />
+    <Content Include="case\20.html" />
+    <Content Include="case\21.html" />
+    <Content Include="case\22.html" />
+    <Content Include="case\23.html" />
+    <Content Include="case\24.html" />
+    <Content Include="case\25.html" />
+    <Content Include="case\26.html" />
+    <Content Include="case\27.html" />
+    <Content Include="case\28.html" />
+    <Content Include="case\29.html" />
+    <Content Include="case\30.html" />
+    <Content Include="case\31.html" />
+    <Content Include="case\32.html" />
+    <Content Include="case\33.html" />
+    <Content Include="case\34.html" />
+    <Content Include="case\35.html" />
+    <Content Include="case\36.html" />
+    <Content Include="case\37.html" />
+    <Content Include="case\38.html" />
+    <Content Include="case\6.html" />
+    <Content Include="case\7.html" />
+    <Content Include="case\8.html" />
+    <Content Include="case\9.html" />
+    <Content Include="case\index.html" />
+    <Content Include="case\page-10_1.html" />
+    <Content Include="case\page-11_1.html" />
+    <Content Include="case\page-12_1.html" />
+    <Content Include="case\page-13_1.html" />
+    <Content Include="case\page-14_1.html" />
+    <Content Include="case\page-15_1.html" />
+    <Content Include="case\page-16_1.html" />
+    <Content Include="case\page-17_1.html" />
+    <Content Include="case\page-18_1.html" />
+    <Content Include="case\page-19_1.html" />
+    <Content Include="case\page-2.html" />
+    <Content Include="case\page-20_1.html" />
+    <Content Include="case\page-21_1.html" />
+    <Content Include="case\page-22_1.html" />
+    <Content Include="case\page-23_1.html" />
+    <Content Include="case\page-24_1.html" />
+    <Content Include="case\page-25_1.html" />
+    <Content Include="case\page-26_1.html" />
+    <Content Include="case\page-27_1.html" />
+    <Content Include="case\page-28_1.html" />
+    <Content Include="case\page-3.html" />
+    <Content Include="case\page-4.html" />
+    <Content Include="case\page-9_1.html" />
+    <Content Include="common\foot.html" />
+    <Content Include="common\head.html" />
+    <Content Include="common\meta.html" />
+    <Content Include="common\right.html" />
+    <Content Include="contact.html" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\case.css" />
+    <Content Include="css\com.css" />
+    <Content Include="css\contact.css" />
+    <Content Include="css\font\context.svg" />
+    <Content Include="css\full.css" />
+    <Content Include="css\media.css" />
+    <Content Include="css\mfen.css" />
+    <Content Include="css\page4\css\default.css" />
+    <Content Include="css\page4\css\style.css" />
+    <Content Include="css\page4\js\app.js" />
+    <Content Include="css\page4\js\particles.js" />
+    <Content Include="css\page4\js\particles.min.js" />
+    <Content Include="css\public.css" />
+    <Content Include="css\style.reset.css" />
+    <Content Include="domainName\add.aspx" />
+    <Content Include="domainName\css\style.css" />
+    <Content Include="domainName\default.aspx" />
+    <Content Include="domainName\js\laydate\laydate.js" />
+    <Content Include="domainName\js\laydate\need\laydate.css" />
+    <Content Include="domainName\js\laydate\skins\dahong\icon.png" />
+    <Content Include="domainName\js\laydate\skins\dahong\laydate.css" />
+    <Content Include="domainName\js\laydate\skins\default\icon.png" />
+    <Content Include="domainName\js\laydate\skins\default\laydate.css" />
+    <Content Include="domainName\js\laydate\skins\molv\icon.png" />
+    <Content Include="domainName\js\laydate\skins\molv\laydate.css" />
+    <Content Include="domainName\js\login.js" />
+    <Content Include="domainName\main.aspx" />
+    <Content Include="h5\css\animate.min.css" />
+    <Content Include="h5\css\index.css" />
+    <Content Include="h5\css\javascript.fullPage.css" />
+    <Content Include="h5\css\style.reset.css" />
+    <Content Include="h5\font\kokila.svg" />
+    <Content Include="h5\images\bg1.jpg" />
+    <Content Include="h5\images\bg2.jpg" />
+    <Content Include="h5\images\bg3.jpg" />
+    <Content Include="h5\images\bg4.jpg" />
+    <Content Include="h5\index.html" />
+    <Content Include="htmls\case.html" />
+    <Content Include="htmls\caseShow.html" />
+    <Content Include="htmls\news.html" />
+    <Content Include="htmls\newshow.html" />
+    <Content Include="images\about_1.png" />
+    <Content Include="images\about_2.png" />
+    <Content Include="images\about_banner_01.jpg" />
+    <Content Include="images\about_banner_011.jpg" />
+    <Content Include="images\about_banner_02.jpg" />
+    <Content Include="images\about_bg.jpg" />
+    <Content Include="images\about_bg.png" />
+    <Content Include="images\a_us.png" />
+    <Content Include="images\banner\banner2.jpg" />
+    <Content Include="images\banner\banner3.jpg" />
+    <Content Include="images\banner\bg-lineL.png" />
+    <Content Include="images\banner\bg-lineR.png" />
+    <Content Include="images\banner\bg1-1.png" />
+    <Content Include="images\banner\bg1-2.png" />
+    <Content Include="images\banner\bg1-3.png" />
+    <Content Include="images\banner\bg1-4.png" />
+    <Content Include="images\banner\bg1-44.png" />
+    <Content Include="images\banner\bg1-5.png" />
+    <Content Include="images\banner\bg1-6.png" />
+    <Content Include="images\banner\bg1.jpg" />
+    <Content Include="images\banner\bg2-1.png" />
+    <Content Include="images\banner\bg2-2.png" />
+    <Content Include="images\banner\bg2-3.png" />
+    <Content Include="images\banner\bg3-1.png" />
+    <Content Include="images\banner\bg3-2.png" />
+    <Content Include="images\banner\bg3-3.png" />
+    <Content Include="images\banner\bg3-4.png" />
+    <Content Include="images\banner\bz1.jpg" />
+    <Content Include="images\case.png" />
+    <Content Include="images\case\1.jpg" />
+    <Content Include="images\case\2.jpg" />
+    <Content Include="images\case\3.jpg" />
+    <Content Include="images\case\4.jpg" />
+    <Content Include="images\case\5.jpg" />
+    <Content Include="images\case\6.jpg" />
+    <Content Include="images\case\case_03.png" />
+    <Content Include="images\case\case_05.png" />
+    <Content Include="images\case\case_07.png" />
+    <Content Include="images\case\case_12.png" />
+    <Content Include="images\case\case_13.png" />
+    <Content Include="images\case\case_14.png" />
+    <Content Include="images\case\case_18.png" />
+    <Content Include="images\case\case_19.png" />
+    <Content Include="images\case\case_20.png" />
+    <Content Include="images\case\closebig.png" />
+    <Content Include="images\case_banner_02.jpg" />
+    <Content Include="images\caxq\10.jpg" />
+    <Content Include="images\caxq\11.jpg" />
+    <Content Include="images\caxq\12.jpg" />
+    <Content Include="images\caxq\13.jpg" />
+    <Content Include="images\caxq\14.jpg" />
+    <Content Include="images\caxq\15.jpg" />
+    <Content Include="images\caxq\16.jpg" />
+    <Content Include="images\caxq\17.jpg" />
+    <Content Include="images\caxq\18.jpg" />
+    <Content Include="images\caxq\19.jpg" />
+    <Content Include="images\caxq\2.jpg" />
+    <Content Include="images\caxq\20.jpg" />
+    <Content Include="images\caxq\21.jpg" />
+    <Content Include="images\caxq\22.jpg" />
+    <Content Include="images\caxq\23.jpg" />
+    <Content Include="images\caxq\24.jpg" />
+    <Content Include="images\caxq\25.jpg" />
+    <Content Include="images\caxq\26.jpg" />
+    <Content Include="images\caxq\27.jpg" />
+    <Content Include="images\caxq\28.jpg" />
+    <Content Include="images\caxq\3.jpg" />
+    <Content Include="images\caxq\4.jpg" />
+    <Content Include="images\caxq\5.jpg" />
+    <Content Include="images\caxq\6.jpg" />
+    <Content Include="images\caxq\7.jpg" />
+    <Content Include="images\caxq\8.jpg" />
+    <Content Include="images\caxq\9.jpg" />
+    <Content Include="images\caxq\case29_wdlc.jpg" />
+    <Content Include="images\caxq\case30_xgll.jpg" />
+    <Content Include="images\caxq\case31_xjjj.jpg" />
+    <Content Include="images\caxq\case32_xnrd.jpg" />
+    <Content Include="images\caxq\case33_ywcf.jpg" />
+    <Content Include="images\caxq\case34_ywcfapp.jpg" />
+    <Content Include="images\caxq\case35_ydrz.jpg" />
+    <Content Include="images\caxq\case36_tyxx.jpg" />
+    <Content Include="images\caxq\case37_xhapp.jpg" />
+    <Content Include="images\caxq\case38_yjl.jpg" />
+    <Content Include="images\caxq\case39_yccp.jpg" />
+    <Content Include="images\caxq\case40_yygj.jpg" />
+    <Content Include="images\caxq\case41_cl.jpg" />
+    <Content Include="images\caxq\case42_dj.jpg" />
+    <Content Include="images\caxq\case43_et.jpg" />
+    <Content Include="images\caxq\case44_gg.jpg" />
+    <Content Include="images\caxq\case45_xh.jpg" />
+    <Content Include="images\caxq\casedq.jpg" />
+    <Content Include="images\client.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\cont-bg.png" />
+    <Content Include="images\con_bg1.png" />
+    <Content Include="images\er.jpg" />
+    <Content Include="images\fbg.png" />
+    <Content Include="images\icon.png" />
+    <Content Include="images\index05.jpg" />
+    <Content Include="images\jt.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo\1.png" />
+    <Content Include="images\logo\2.png" />
+    <Content Include="images\logo\3.png" />
+    <Content Include="images\logo\4.png" />
+    <Content Include="images\logo\5.png" />
+    <Content Include="images\logo\6.png" />
+    <Content Include="images\nd_03.png" />
+    <Content Include="images\nd_07.png" />
+    <Content Include="images\ne4_1.png" />
+    <Content Include="images\ne4_2.png" />
+    <Content Include="images\ne5_1.png" />
+    <Content Include="images\ne5_2.png" />
+    <Content Include="images\news _banner.png" />
+    <Content Include="images\news _banner1.jpg" />
+    <Content Include="images\news _de1_banner.png" />
+    <Content Include="images\news1.jpg" />
+    <Content Include="images\news3.jpg" />
+    <Content Include="images\news4.jpg" />
+    <Content Include="images\news_1.png" />
+    <Content Include="images\news_2.png" />
+    <Content Include="images\news_3.png" />
+    <Content Include="images\news_de _banner.png" />
+    <Content Include="images\page2\1.png" />
+    <Content Include="images\page2\11.png" />
+    <Content Include="images\page2\2.png" />
+    <Content Include="images\page2\22.png" />
+    <Content Include="images\page2\3.png" />
+    <Content Include="images\page2\33.png" />
+    <Content Include="images\page2\4.png" />
+    <Content Include="images\page2\44.png" />
+    <Content Include="images\page2\page2-1.png" />
+    <Content Include="images\page2\page2-2.png" />
+    <Content Include="images\page2\page2-3.png" />
+    <Content Include="images\page2\page2-4.png" />
+    <Content Include="images\page3\1.png" />
+    <Content Include="images\page3\2.jpg" />
+    <Content Include="images\page3\index_05.png" />
+    <Content Include="images\page3\index_07.png" />
+    <Content Include="images\page3\index_09.png" />
+    <Content Include="images\page3\index_14.png" />
+    <Content Include="images\page3\index_15.png" />
+    <Content Include="images\page3\index_16.png" />
+    <Content Include="images\page3\index_39.png" />
+    <Content Include="images\page3\yel-txt.png" />
+    <Content Include="images\page4\page4-1.png" />
+    <Content Include="images\page4\page4-10.png" />
+    <Content Include="images\page4\page4-2.png" />
+    <Content Include="images\page4\page4-3.png" />
+    <Content Include="images\page4\page4-4.png" />
+    <Content Include="images\page4\page4-5.png" />
+    <Content Include="images\page4\page4-6.png" />
+    <Content Include="images\page4\page4-7.png" />
+    <Content Include="images\page4\page4-8.png" />
+    <Content Include="images\page4\page4-9.png" />
+    <Content Include="images\pc1.png" />
+    <Content Include="images\ph1.png" />
+    <Content Include="images\ph2.png" />
+    <Content Include="images\pic1.png" />
+    <Content Include="images\pic2.png" />
+    <Content Include="images\pic3.png" />
+    <Content Include="images\pic4.png" />
+    <Content Include="images\pic5.png" />
+    <Content Include="images\ri_bar.jpg" />
+    <Content Include="images\serve_banner.png" />
+    <Content Include="images\serve_banner1.png" />
+    <Content Include="images\serve_ba_box.png" />
+    <Content Include="images\serve_ba_txt.png" />
+    <Content Include="images\sev_icon.png" />
+    <Content Include="images\share.png" />
+    <Content Include="images\site.png" />
+    <Content Include="images\vrbox.jpg" />
+    <Content Include="images\VR_banner.jpg" />
+    <Content Include="images\y_photo.png" />
+    <Content Include="images\y_photo1.png" />
+    <Content Include="images\y_photo2.png" />
+    <Content Include="images\y_photo3.png" />
+    <Content Include="images\zgs.png" />
+    <Content Include="images\zx1.png" />
+    <Content Include="images\zx2.png" />
+    <Content Include="images\zx3.png" />
+    <Content Include="images\zx4.png" />
+    <Content Include="img\case\icon.png" />
+    <Content Include="img\case\msk.jpg" />
+    <Content Include="img\case\msk_logo.jpg" />
+    <Content Include="img\fhbg.png" />
+    <Content Include="img\ico2n.png" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\icon1.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\qq.png" />
+    <Content Include="index.html" />
+    <Content Include="js\app.js" />
+    <Content Include="js\caseshow.js" />
+    <Content Include="js\commen.js" />
+    <Content Include="js\index.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-ui.min.js" />
+    <Content Include="js\jquery.fullPage.min.js" />
+    <Content Include="js\js\caseShow.js" />
+    <Content Include="js\js\cloud_js.js" />
+    <Content Include="js\js\common.js" />
+    <Content Include="js\js\DD_belatedPNG.js" />
+    <Content Include="js\js\html5shiv.min.js" />
+    <Content Include="js\js\indexBanner.js" />
+    <Content Include="js\js\JavaScript1.js" />
+    <Content Include="js\js\message.js" />
+    <Content Include="js\js\parallax.js" />
+    <Content Include="js\js\respond.min.js" />
+    <Content Include="js\message.js" />
+    <Content Include="js\monitor-pub-min.js" />
+    <Content Include="js\particles.min.js" />
+    <Content Include="js\uaredirect.js" />
+    <Content Include="news.html" />
+    <Content Include="newshow.html" />
+    <Content Include="news\1.html" />
+    <Content Include="script\html.html" />
+    <Content Include="script\javascript.fullPage.js" />
+    <Content Include="script\javascript.fullPage.min.js" />
+    <Content Include="service.html" />
+    <Content Include="style\animate.min.css" />
+    <Content Include="style\index.css" />
+    <Content Include="style\javascript.fullPage.css" />
+    <Content Include="ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="ueditor\dialogs\attachment\attachment.js" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_jpg.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\alignicon.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\alignicon.png" />
+    <Content Include="ueditor\dialogs\attachment\images\bg.png" />
+    <Content Include="ueditor\dialogs\attachment\images\file-icons.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\file-icons.png" />
+    <Content Include="ueditor\dialogs\attachment\images\icons.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\icons.png" />
+    <Content Include="ueditor\dialogs\attachment\images\image.png" />
+    <Content Include="ueditor\dialogs\attachment\images\progress.png" />
+    <Content Include="ueditor\dialogs\attachment\images\success.gif" />
+    <Content Include="ueditor\dialogs\attachment\images\success.png" />
+    <Content Include="ueditor\dialogs\background\background.css" />
+    <Content Include="ueditor\dialogs\background\background.html" />
+    <Content Include="ueditor\dialogs\background\background.js" />
+    <Content Include="ueditor\dialogs\background\images\bg.png" />
+    <Content Include="ueditor\dialogs\background\images\success.png" />
+    <Content Include="ueditor\dialogs\charts\chart.config.js" />
+    <Content Include="ueditor\dialogs\charts\charts.css" />
+    <Content Include="ueditor\dialogs\charts\charts.html" />
+    <Content Include="ueditor\dialogs\charts\charts.js" />
+    <Content Include="ueditor\dialogs\charts\images\charts0.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts1.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts2.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts3.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts4.png" />
+    <Content Include="ueditor\dialogs\charts\images\charts5.png" />
+    <Content Include="ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="ueditor\dialogs\help\help.css" />
+    <Content Include="ueditor\dialogs\help\help.html" />
+    <Content Include="ueditor\dialogs\help\help.js" />
+    <Content Include="ueditor\dialogs\image\image.css" />
+    <Content Include="ueditor\dialogs\image\image.html" />
+    <Content Include="ueditor\dialogs\image\image.js" />
+    <Content Include="ueditor\dialogs\image\images\alignicon.jpg" />
+    <Content Include="ueditor\dialogs\image\images\bg.png" />
+    <Content Include="ueditor\dialogs\image\images\icons.gif" />
+    <Content Include="ueditor\dialogs\image\images\icons.png" />
+    <Content Include="ueditor\dialogs\image\images\image.png" />
+    <Content Include="ueditor\dialogs\image\images\progress.png" />
+    <Content Include="ueditor\dialogs\image\images\success.gif" />
+    <Content Include="ueditor\dialogs\image\images\success.png" />
+    <Content Include="ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="ueditor\dialogs\internal.js" />
+    <Content Include="ueditor\dialogs\link\link.html" />
+    <Content Include="ueditor\dialogs\map\map.html" />
+    <Content Include="ueditor\dialogs\map\show.html" />
+    <Content Include="ueditor\dialogs\music\music.css" />
+    <Content Include="ueditor\dialogs\music\music.html" />
+    <Content Include="ueditor\dialogs\music\music.js" />
+    <Content Include="ueditor\dialogs\preview\preview.html" />
+    <Content Include="ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="ueditor\dialogs\table\dragicon.png" />
+    <Content Include="ueditor\dialogs\table\edittable.css" />
+    <Content Include="ueditor\dialogs\table\edittable.html" />
+    <Content Include="ueditor\dialogs\table\edittable.js" />
+    <Content Include="ueditor\dialogs\table\edittd.html" />
+    <Content Include="ueditor\dialogs\table\edittip.html" />
+    <Content Include="ueditor\dialogs\template\config.js" />
+    <Content Include="ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="ueditor\dialogs\template\template.css" />
+    <Content Include="ueditor\dialogs\template\template.html" />
+    <Content Include="ueditor\dialogs\template\template.js" />
+    <Content Include="ueditor\dialogs\video\images\bg.png" />
+    <Content Include="ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\file-icons.gif" />
+    <Content Include="ueditor\dialogs\video\images\file-icons.png" />
+    <Content Include="ueditor\dialogs\video\images\icons.gif" />
+    <Content Include="ueditor\dialogs\video\images\icons.png" />
+    <Content Include="ueditor\dialogs\video\images\image.png" />
+    <Content Include="ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\progress.png" />
+    <Content Include="ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="ueditor\dialogs\video\images\success.gif" />
+    <Content Include="ueditor\dialogs\video\images\success.png" />
+    <Content Include="ueditor\dialogs\video\video.css" />
+    <Content Include="ueditor\dialogs\video\video.html" />
+    <Content Include="ueditor\dialogs\video\video.js" />
+    <Content Include="ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="ueditor\dialogs\wordimage\tangram.js" />
+    <Content Include="ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="ueditor\index.html" />
+    <Content Include="ueditor\lang\en\en.js" />
+    <Content Include="ueditor\lang\en\images\addimage.png" />
+    <Content Include="ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="ueditor\lang\en\images\background.png" />
+    <Content Include="ueditor\lang\en\images\button.png" />
+    <Content Include="ueditor\lang\en\images\copy.png" />
+    <Content Include="ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="ueditor\lang\en\images\listbackground.png" />
+    <Content Include="ueditor\lang\en\images\localimage.png" />
+    <Content Include="ueditor\lang\en\images\music.png" />
+    <Content Include="ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="ueditor\lang\en\images\upload.png" />
+    <Content Include="ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.dll" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.pdb" />
+    <Content Include="ueditor\net\Bin\Newtonsoft.Json.xml" />
+    <Content Include="ueditor\net\net.sln" />
+    <Content Include="ueditor\themes\default\css\ueditor.css" />
+    <Content Include="ueditor\themes\default\css\ueditor.min.css" />
+    <Content Include="ueditor\themes\default\dialogbase.css" />
+    <Content Include="ueditor\themes\default\images\anchor.gif" />
+    <Content Include="ueditor\themes\default\images\arrow.png" />
+    <Content Include="ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="ueditor\themes\default\images\charts.png" />
+    <Content Include="ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="ueditor\themes\default\images\filescan.png" />
+    <Content Include="ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="ueditor\themes\default\images\icons.gif" />
+    <Content Include="ueditor\themes\default\images\icons.png" />
+    <Content Include="ueditor\themes\default\images\loaderror.png" />
+    <Content Include="ueditor\themes\default\images\loading.gif" />
+    <Content Include="ueditor\themes\default\images\lock.gif" />
+    <Content Include="ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="ueditor\themes\default\images\scale.png" />
+    <Content Include="ueditor\themes\default\images\sortable.png" />
+    <Content Include="ueditor\themes\default\images\spacer.gif" />
+    <Content Include="ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="ueditor\themes\default\images\upload.png" />
+    <Content Include="ueditor\themes\default\images\videologo.gif" />
+    <Content Include="ueditor\themes\default\images\word.gif" />
+    <Content Include="ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="ueditor\themes\iframe.css" />
+    <Content Include="ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\mootools-adapter.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\mootools-adapter.src.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\prototype-adapter.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\prototype-adapter.src.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\standalone-framework.js" />
+    <Content Include="ueditor\third-party\highcharts\adapters\standalone-framework.src.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts-more.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts-more.src.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts.js" />
+    <Content Include="ueditor\third-party\highcharts\highcharts.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\annotations.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\annotations.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\canvas-tools.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\canvas-tools.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\data.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\data.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\drilldown.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\drilldown.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\exporting.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\exporting.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\funnel.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\funnel.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\heatmap.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\heatmap.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\map.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\map.src.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\no-data-to-display.js" />
+    <Content Include="ueditor\third-party\highcharts\modules\no-data-to-display.src.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\dark-blue.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\dark-green.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\gray.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\grid.js" />
+    <Content Include="ueditor\third-party\highcharts\themes\skies.js" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.js" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.min.js" />
+    <Content Include="ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.svg" />
+    <Content Include="ueditor\third-party\video-js\video-js.css" />
+    <Content Include="ueditor\third-party\video-js\video-js.min.css" />
+    <Content Include="ueditor\third-party\video-js\video-js.swf" />
+    <Content Include="ueditor\third-party\video-js\video.dev.js" />
+    <Content Include="ueditor\third-party\video-js\video.js" />
+    <Content Include="ueditor\third-party\webuploader\Uploader.swf" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.css" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.custom.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.custom.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.flashonly.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.flashonly.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.html5only.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.html5only.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.min.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.withoutimage.js" />
+    <Content Include="ueditor\third-party\webuploader\webuploader.withoutimage.min.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.min.js" />
+    <Content Include="ueditor\third-party\zeroclipboard\ZeroClipboard.swf" />
+    <Content Include="ueditor\ueditor.all.js" />
+    <Content Include="ueditor\ueditor.all.min.js" />
+    <Content Include="ueditor\ueditor.config.js" />
+    <Content Include="ueditor\ueditor.parse.js" />
+    <Content Include="ueditor\ueditor.parse.min.js" />
+    <Content Include="video\1.png" />
+    <Content Include="video\2.png" />
+    <Content Include="video\3.png" />
+    <Content Include="video\4.png" />
+    <Content Include="video\5.png" />
+    <Content Include="video\oceanfront-living.mp4" />
+    <Content Include="VR.html" />
+    <Content Include="wap.html" />
+    <Content Include="wap\css\animate.min.css" />
+    <Content Include="wap\css\index.css" />
+    <Content Include="wap\css\style.reset.css" />
+    <Content Include="wap\img\1.png" />
+    <Content Include="wap\img\2.png" />
+    <Content Include="wap\img\3.png" />
+    <Content Include="wap\img\4.png" />
+    <Content Include="wap\img\arrows.png" />
+    <Content Include="wap\img\banner2.jpg" />
+    <Content Include="wap\img\banner2_1_03.png" />
+    <Content Include="wap\img\banner3.jpg" />
+    <Content Include="wap\img\bg-lineL.png" />
+    <Content Include="wap\img\bg-lineR.png" />
+    <Content Include="wap\img\bg1-1.png" />
+    <Content Include="wap\img\bg1-2.png" />
+    <Content Include="wap\img\bg1-3.png" />
+    <Content Include="wap\img\bg1-4.png" />
+    <Content Include="wap\img\bg1-5.png" />
+    <Content Include="wap\img\bg1-6.png" />
+    <Content Include="wap\img\close.png" />
+    <Content Include="wap\img\foot_bg.png" />
+    <Content Include="wap\img\phone12.png" />
+    <Content Include="wap\img\phone13.png" />
+    <Content Include="wap\img\phone14.png" />
+    <Content Include="wap\img\phone15.png" />
+    <Content Include="wap\img\phone16.png" />
+    <Content Include="wap\img\phone17.png" />
+    <Content Include="wap\img\phone18.png" />
+    <Content Include="wap\img\phone_03.png" />
+    <Content Include="wap\img\phone_09.png" />
+    <Content Include="wap\img\phone_16.png" />
+    <Content Include="wap\img\slider1-1.png" />
+    <Content Include="wap\img\slider1-2.png" />
+    <Content Include="wap\img\slider1-3.png" />
+    <Content Include="wap\js\idangerous.swiper.scrollbar-2.1.js" />
+    <Content Include="wap\js\jquery-1.10.1.min.js" />
+    <Content Include="wap\js\jquery-1.9.1.min.js" />
+    <Content Include="wap\js\lazy.js" />
+    <Content Include="wap\js\TouchSlide.1.1.source.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="weburl.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\main\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\main\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\main\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\main\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\management\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\management\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\management\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\management\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\management\level.ashx.cs">
+      <DependentUpon>level.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\management\roleright.aspx.cs">
+      <DependentUpon>roleright.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\management\roleright.aspx.designer.cs">
+      <DependentUpon>roleright.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\management\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\management\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manager\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manager\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\manager.ashx.cs">
+      <DependentUpon>manager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\sql.aspx.cs">
+      <DependentUpon>sql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manager\sql.aspx.designer.cs">
+      <DependentUpon>sql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manager\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manager\uppwd.aspx.cs">
+      <DependentUpon>uppwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manager\uppwd.aspx.designer.cs">
+      <DependentUpon>uppwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\message\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\message\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\message\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\message\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\message\message.ashx.cs">
+      <DependentUpon>message.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\message\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\message\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\type\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\type\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\type\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\type\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\type\type.ashx.cs">
+      <DependentUpon>type.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\type\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\type\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\ajax\acticle.ashx.cs">
+      <DependentUpon>acticle.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\ajax\artzd.ashx.cs">
+      <DependentUpon>artzd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\ajax\website.ashx.cs">
+      <DependentUpon>website.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\allAgent\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\allAgent\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\allAgent\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\allAgent\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\allAgent\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\allAgent\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\demo.aspx.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\demo.aspx.designer.cs">
+      <DependentUpon>demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\desc\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\desc\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\desc\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\desc\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\desc\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\desc\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\message\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\message\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\message\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\message\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\down\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\down\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\down\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\down\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\down\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\down\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\news\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\news\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\news\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\news\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\news\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\news\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\other\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\other\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\other\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\other\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\other\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\other\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pic\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pic\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pic\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pic\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pic\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pic\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\icase\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\icase\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\icase\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\icase\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\icase\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\icase\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pro\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pro\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pro\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pro\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\pro\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\pro\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\product\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\product\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\product\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\product\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\web\product\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\web\product\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\about.ashx.cs">
+      <DependentUpon>about.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\case.ashx.cs">
+      <DependentUpon>case.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\casedj.ashx.cs">
+      <DependentUpon>casedj.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\case_show.ashx.cs">
+      <DependentUpon>case_show.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\contact.ashx.cs">
+      <DependentUpon>contact.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\gethtml.cs" />
+    <Compile Include="ajax\html.ashx.cs">
+      <DependentUpon>html.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\index.ashx.cs">
+      <DependentUpon>index.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\message.ashx.cs">
+      <DependentUpon>message.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\news.ashx.cs">
+      <DependentUpon>news.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\newsbrowse.ashx.cs">
+      <DependentUpon>newsbrowse.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\news_show.ashx.cs">
+      <DependentUpon>news_show.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\serve.ashx.cs">
+      <DependentUpon>serve.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\type.ashx.cs">
+      <DependentUpon>type.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\VR.ashx.cs">
+      <DependentUpon>VR.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\wap.ashx.cs">
+      <DependentUpon>wap.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="domainName\add.aspx.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="domainName\add.aspx.designer.cs">
+      <DependentUpon>add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="domainName\ajax\domainEdit.ashx.cs">
+      <DependentUpon>domainEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="domainName\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="domainName\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="domainName\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="domainName\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ueditor\net\App_Code\Config.cs" />
+    <Compile Include="ueditor\net\App_Code\ConfigHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\CrawlerHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\Handler.cs" />
+    <Compile Include="ueditor\net\App_Code\ListFileHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\NotSupportedHandler.cs" />
+    <Compile Include="ueditor\net\App_Code\PathFormater.cs" />
+    <Compile Include="ueditor\net\App_Code\UploadHandler.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\fonts\.DS_Store" />
+    <Content Include="admin\fonts\Elephant.ttf" />
+    <Content Include="admin\images\.DS_Store" />
+    <Content Include="admin\management\level.ashx" />
+    <Content Include="admin\manager\manager.ashx" />
+    <Content Include="admin\message\message.ashx" />
+    <Content Include="admin\type\type.ashx" />
+    <Content Include="admin\Web.config" />
+    <Content Include="admin\web\ajax\acticle.ashx" />
+    <Content Include="admin\web\ajax\artzd.ashx" />
+    <Content Include="admin\web\ajax\website.ashx" />
+    <Content Include="ueditor\.DS_Store" />
+    <Content Include="ueditor\net\config.json" />
+    <Content Include="ueditor\net\controller.ashx" />
+    <Content Include="ueditor\net\README.md" />
+    <Content Include="ueditor\net\Web.config" />
+    <Content Include="ueditor\third-party\.DS_Store" />
+    <Content Include="ueditor\third-party\jquery-1.10.2.min.map" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.eot" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.ttf" />
+    <Content Include="ueditor\third-party\video-js\font\vjs.woff" />
+    <Content Include="ajax\news.ashx" />
+    <Content Include="ajax\news_show.ashx" />
+    <Content Include="ajax\newsbrowse.ashx" />
+    <Content Include="ajax\serve.ashx" />
+    <Content Include="ajax\contact.ashx" />
+    <Content Include="ajax\about.ashx" />
+    <Content Include="ajax\case.ashx" />
+    <Content Include="ajax\index.ashx" />
+    <Content Include="ajax\case_show.ashx" />
+    <Content Include="ajax\casedj.ashx" />
+    <Content Include="ajax\message.ashx" />
+    <Content Include="ajax\wap.ashx" />
+    <Content Include="ajax\type.ashx" />
+    <Content Include="ajax\html.ashx" />
+    <Content Include="ajax\VR.ashx" />
+    <Content Include="css\font\context.eot" />
+    <Content Include="css\font\context.ttf" />
+    <Content Include="css\font\context.woff" />
+    <Content Include="domainName\ajax\domainEdit.ashx" />
+    <Content Include="h5\font\kokila.ttf" />
+    <None Include="Properties\PublishProfiles\web.config.pubxml" />
+    <Content Include="video\oceanfront-living.webm" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="h5\js\" />
+    <Folder Include="template\" />
+    <Folder Include="upload\image\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{45013dac-b7b7-4578-93e2-7445d1ccc170}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CL\CL.csproj">
+      <Project>{86be3170-ac26-4f33-b8da-d79334cd77e8}</Project>
+      <Name>CL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{99ee1b8a-6192-4314-a76c-d301f5e5d5f7}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>32345</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:32345/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

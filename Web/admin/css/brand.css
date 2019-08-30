@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+table.brand th{
+	text-align: right;
+	font-weight: normal;
+}
+table.brand td{
+	text-align: left;
+	position: relative;
+	background: #fff;
+}
+table.brand td i.loading{
+	width:16px;
+	height:16px;
+	background:url(../images/loading.gif) 0 0 no-repeat;
+	display:none;
+	position: absolute;
+	left:260px;
+	top:8px;
+}
+table.brand td span.error{
+	position: absolute;
+	left:260px;
+	top:8px;
+	font-size: 12px;
+	color:red;
+	display:none;
+}
+table.brand td input{
+	width:250px;
+	height:25px;
+}
+
+table.brand td select{
+	width:250px;
+	height:25px;
+}
+table.brand td textarea{
+	width:100%;
+	border:1px solid #eee;
+}
+
+img#uploadBtn{
+	vertical-align: middle;
+	max-width:100px;
+	max-height:100px;
+	border:1px solid #eee;
+	padding: 4px;
+}
+img#uploadBtn:hover{
+	cursor:pointer;
+	background: #fafafa;
+}
+img#listLogo{
+	width:60px;
+	height:60px;
+	border:1px solid #ccc;
+	padding: 1px;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+

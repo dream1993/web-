@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+dl,dt,dd,.topNav{
+	overflow:hidden;
+}
+dt{
+	border-bottom: 1px solid #eee;
+}
+dl.nav{
+	border:1px solid #eee;
+	width: 100%;
+	border-bottom: none;
+}
+
+dl.nav > dt{
+	background: #fcfcfc;
+	padding:0 10px;
+	height:40px;
+	line-height: 40px;
+}
+.topNav{
+	padding:0 10px;
+	height:40px;
+	line-height: 40px;
+}
+.topNav > .content > .w50 > a{
+	font-size: 12px;
+	color:#666;
+}
+dl.nav > dd{
+	border-bottom: 1px solid #eee;
+}
+dl.nav > dd > dl > dd{
+	padding:0 20px;
+	height:35px;
+	line-height: 35px;
+	border-top: 1px dashed #eee;
+	font-size:12px;
+	background: #fefefe;
+	color: #666;
+}
+
+dl.nav > dd > dl{
+	display:none;
+}
+dl.nav > dd > dl > dd .sort{
+	width:30px;
+}
+.sort{
+	width:40px;
+}
+.block{
+	display:block !important;
+}
+span.name{
+	text-indent: 20px;
+}
+dl.nav > dd > dl > dd > span > i.subBtn{
+	width:56px;
+	height:35px;
+	display:inline-block;
+	background-image: url(../images/nav-plus.png);
+	background-position: 3px -22px;
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
+
+
+.tableL{
+	float: left;
+}
+.tableR{
+	float: right;
+}
+.textL{
+	text-align: left;
+}
+.textR{
+	text-align: right;
+}
+.textC{
+	text-align: center;
+}
+.w2{
+	width:2%;
+}
+.topNav > .w2 > i{
+	width:10px;
+	height:10px;
+	display:inline-block;
+	background-image: url(../images/nav-plus.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+.w50{
+	width:50%;
+}
+.w50:first-child{
+	text-align: left;
+}
+.w50:last-child{
+	text-align: right;
+}
+.w98{
+	width:98%;
+}
+.content{
+	width:98%;
+}
+.indexSubmit{
+	text-align: right;
+	padding:10px;
+}
+
+table.nav th{
+	text-align: right;
+	font-weight: normal;
+}
+table.nav td{
+	text-align: left;
+	position: relative;
+	background: #fff;
+}
+table.nav td i.loading{
+	width:16px;
+	height:16px;
+	background:url(../images/loading.gif) 0 0 no-repeat;
+	display:none;
+	position: absolute;
+	left:260px;
+	top:8px;
+}
+table.nav td span.error{
+	position: absolute;
+	left:260px;
+	top:8px;
+	font-size: 12px;
+	color:red;
+	display:none;
+}
+table.nav td input{
+	width:250px;
+	height:25px;
+}
+
+table.nav td select{
+	width:250px;
+	height:25px;
+}
+textarea{
+	width:100%;
+	border:1px solid #ddd;
+}
+#uploadOneBtn{
+	cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html>
+<head>
+    {meta}
+    <title>{webtitle}</title>
+    <meta name="keywords" content="{keywords}" />
+    <meta name="description" content="{Description}" />
+    <link rel="stylesheet" type="text/css" href="/css/style.reset.css" />
+    <link href="/css/com.css" rel="stylesheet" />
+    <link href="/css/case.css" rel="stylesheet" />
+    <link href="/css/mfen.css" rel="stylesheet" />
+    <link href="/style/index.css" rel="stylesheet" />
+
+</head>
+
+<body class="ca-xq">
+    <div class="wraper">
+       {head}
+        <div class="ba-box casexq"></div>
+        <!--案例详情开始-->
+        <div class="xq-line"></div>
+        <div class="alxq">
+
+            <a href="javascript:void(0)" onclick="window.history.go(-1)">
+                <div class="case-back" style="border:0;"><i></i>返回案例</div></a>
+                <center>
+                    <div class="casexq-txt">
+                        <h1>{case_title}</h1>
+                        <p class="p14">{case_a2}</p>
+                        <h6><span>项目属性：</span>{case_keyword}</h6>
+                        <h6><span>品牌属性：</span>{case_realTitle}</h6>
+                        <h6 class="intr-case"><span>{case_description}</span></h6>
+                        <a class="zixun" href="http://wpa.qq.com/msgrd?v=3&uin={qq}&site=qq&menu=yes">我要咨询</a>
+                        <a class="zixun fwwz" href="{case_url}">访问网站</a>
+                    </div>
+                    <div class="casexq-img">
+                        <img src="{case_xq}">
+                    </div>
+                    <div class="case-more">
+                        <a href="/case/">查看更多案例<i></i></a>
+                    </div>
+                </center>
+
+</div>
+        <!--案例详情结束-->
+        <div class="customer">
+            <div class="customer-box">
+                <div class="customer-box-intru clearfix customer-box-intru-left">
+                    <ul>
+                      {more_case}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {foot}</div>
+        {right}
+        <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="/js/index.js"></script>
+        <script type="text/javascript" src="/js/caseshow.js"></script>
+</body>
+</html>

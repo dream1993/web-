@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html>
+<head>
+    {meta}
+    <title>{webtitle}</title>
+    <meta name="keywords" content="{keywords}" />
+    <meta name="description" content="{Description}" />
+    <link rel="stylesheet" type="text/css" href="/css/style.reset.css" />
+    <link href="/css/com.css" rel="stylesheet" />
+    <link href="/css/case.css" rel="stylesheet" />
+    <link href="/css/mfen.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css" />
+</head>
+<body style="">
+    <div class="wraper">
+        {head}
+        <!-- 右侧隐藏导航条 -->
+        <div class="ba-box headTop news news-deta">
+            <div class="news-banner news-ban-deli">
+                <img src="images/news3.jpg">
+            </div>
+            <center>
+                <img class="font-22 animated bounceInRight" style="display:block;" src="images/ne4_1.png">
+                <img class="font-22 animated bounceInLeft" style="display:block;" src="images/ne4_2.png">
+            </center>
+        </div>
+
+        <div class="news-details">
+            <a href="javascript:void(0)" onclick="window.history.go(-1)"><div class="case-back newsd-back"><i></i>返回</div></a>
+            <center>
+                <h3>{news_title}</h3>
+                <span>{news_type} &nbsp; / &nbsp; {news_time}  &nbsp;/ &nbsp; 来源：{news_source}</span>
+            </center>
+        {content}
+        </div>
+        <div class="news-details-foot clearfix">
+            <div class="details-foot-left">
+                <a><i class="details-foot-1"></i></a>
+                <a><i class="details-foot-2"></i></a>
+                <a><i class="details-foot-3"></i></a>
+                <a><i class="details-foot-4"></i></a>
+                <a><i class="details-foot-5"></i></a>
+                <a><i class="details-foot-6"></i></a>
+                <a><i class="details-foot-7"></i></a>
+                <a><i class="details-foot-8"></i></a>
+                <a><i class="details-foot-9"></i></a>
+                <a><i class="details-foot-10"></i></a>
+            </div>
+            <div class="details-foot-right">
+                <p>下一条：{nextNews}</p>
+            </div>
+        </div>
+
+
+       {foot}
+    </div>
+{right}
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/commen.js"></script>
+</body>
+</html>

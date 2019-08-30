@@ -1,0 +1,567 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.foot .footer .foot-txt-hi .share { display: none; }
+
+@media screen and (min-width: 1681px) and (max-width: 1920px) {
+    .banner h3 .bg-line { left: 34.83%; }
+    .banner h3 .bg-line-right { left: 59.3%; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1680px) {
+    .project-box .project-hd h3 { line-height: 40px; padding-top: 30px; }
+    .project-box .project-hd .wyzx-btn { margin-top: 20px; }
+    .project-hd .lxg-case { margin-top: 30px; }
+    .project-bd { margin-top: 26px; }
+    .project-bd-phone { width: 11.39%; }
+    .project-bd-pc { width: 48%; }
+    .project-box .project-hd h4 { margin-top: 4px; }
+    .project { height: 550px; }
+    .bg3txt i { font-size: 34px; }
+
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+    .news-bd-list dl dd { margin-right: 15.68%; }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1399px) {
+    .news-bd-list dl dd { margin-right: 13.68%; }
+    .about-peap .peo-photo ul li p:last-child{height:100px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .news-bd-list dl dd p { font-size: 12px; }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .news-bd-list dl dd h5 { line-height: 30px; }
+    .news-bd-list dl dt span { top: 28px; right: -30px; }
+    .news-bd-list dl:hover .img-blueline { width: 50px; }
+    .list-bd-time { margin-top: -10px; }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .news-bd-list dl dt { width: 40%; }
+    .news-bd-list dl dt span { display: none; }
+    .list-bd-time { display: none; }
+    .news-bd-list dl dd { margin-right: 0; }
+    .news-bd-list dl:hover dd { margin-right: 0; margin-left: 1%; }
+    .news-banner img { height: 180px; }
+    .news h2 { font-size: 24px; }
+    .news center { top: 52%; }
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    .project { height: 530px; }
+    .project-bd-pc { width: 48.8%; }
+    .list-bd-time { margin-top: -10px; }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+    .project { height: 430px; }
+    /* .project-bd-pc { width: 48.8%; }*/
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .project { height: 430px; }
+    .project-bd-pc { width: 48.8%; }
+}
+
+   
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .project-box .project-hd h3 { font-size: 20px; line-height: 30px; }
+    .project-box .project-hd h4 { font-size: 17px; }
+    .project-box .project-hd .wyzx-btn { width: 140px; height: 32px; line-height: 32px; }
+    .project-hd .lxg-case { margin-top: 26px; }
+    .project-bd div p { font-size: 13px; }
+    .project-bd-pc { width: 40%; }
+    .project-bd-phone { width: 9.39%; margin-top: 57px; }
+    .title-solute h1 { font-size: 72px; }
+    .title-solute h3 { font-size: 23px; clear: both; }
+    .title-solute h3 span { font-size: 35px; }
+    .solute-pic1 p { font-size: 18px; }
+    .solute-pic1 p span { font-size: 15px; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1680px) {
+
+    .our-cust { width: 80%; }
+    .about-peap .peo-photo ul li h3 { padding: 18px 4%; }
+    .about-peap .peo-photo ul li p { padding: 15px 4%; }
+    .customer-title { margin: 20px auto 0 auto; }
+    .about-peap .customer-title span { margin: 10px auto; }
+    .peo-photo ul li { margin-top: 40px; }
+    .peo-photo { width: 88%; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    /*关于我们*/
+    .customer .customer-title h2 { font-size: 20px; }
+    .customer .customer-title p { font-size: 13px; }
+    .customer p.intr-txt { font-size: 14px; }
+    .ab-our .ab-our-box h4 { font-size: 16px; }
+    .ab-our .ab-our-box h3 { font-size: 23px; }
+    .ab-our .ab-our-box p { font-size: 13px; }
+    .ab-our .ab-our-box { width: 28.9%; margin: 30px 2.2%; min-height:261px; }
+    .about-serv .wyzx-btn { font-size: 14px; }
+    .our-slient-right { font-size: 13px; }
+    .our-cust h2 { font-size: 24px; }
+    .our-cust-logo ul li { padding: 15px 0; margin: 10px 2.4% 10px 0; width:; }
+    .about-peap .peo-photo ul li h3 { padding: 14px 4%; }
+    .about-peap .peo-photo ul li p { padding: 16px 4%; }
+    .footer .share { margin-left: 3%; }
+    .company ul li p { font-size: 14px; line-height: 26px; }
+    .company ul li p.p1 { width: 310px;  margin-top: 16px; }
+    /*联系我们页面*/
+    .loct-bottom .loc-left form p input { height: 42px; line-height: 40px; margin-bottom: 10px; }
+    .loct-bottom .loc-left form p i.iconc { margin-top: 10px; }
+    .loct-bottom .loc-left form p textarea { height: 122px; line-height: 38px; }
+    .loct-bottom .loc-right h6 { margin-bottom: 12px; }
+    .loct-bottom .loc-right p { line-height: 26px; margin-bottom: 10px; font-size: 14px; }
+    .loct-bottom .loc-right span { line-height: 22px; font-size: 13px; }
+    .loct-bottom { margin-top: 40px; }
+    .location .locont { margin-top: -230px; }
+    .location .locont i.line-vi { margin: 5px 0; }
+    /*case*/
+    .bg-line { width: 80px; }
+    .banner h2 { font-size: 32px; }
+    .customer-box .customer-box-brand ul li a { margin: 35px 0 35px 13px; }
+	.customer-box .right-bar { margin-top:35px;}
+    .customer-box-intru li p { font-size: 15px; margin-top: 8px; }
+    .customer-box-intru li span { margin-bottom: 18px; }
+    .xingdong h2 { font-size: 18px; }
+    .xingdong h3 { font-size: 22px; }
+    /*news*/
+    .news h2 { font-size: 28px; }
+    .news-bd-sele { margin: 26px auto; }
+    .news-bd-sele a { font-synthesis: 14px; }
+    .news-bd-list dl dd h5 { font-size: 16px; line-height: 20px; }
+    .news-bd-list dl dt span { position: absolute; width: 0.001px; height: 1px; background: #00c0ff; top: 20px; right: -30px; transition: all 0.3s; }
+    .news-bd-list dl:hover .img-blueline { width: 50px; }
+    .news-bd-list dl dd p { font-size: 13px; }
+    /* .news-bd-list dl dd { margin-right: 17.68%; }*/
+    .news-bd-list dl:hover dd { margin-left: 2.8%; }
+    /*新闻详情*/
+    .news center { top: 50%; }
+    .news h2.font-22 { font-size: 20px; }
+    .news-details h6 { color: #6b6b6b; font-size: 13px; line-height: 40px; }
+    .news-details p { color: #888888; font-size: 13px; line-height: 22px; }
+    .news h2 { line-height: 30px; }
+    .details-foot-right { font-size: 14px; }
+    .details-foot-left { margin-right: 11.47%; }
+    .service-box h3 { font-size: 18px; }
+    .service-box p { font-size: 15px; }
+    .service-box ul li { font-size: 13px; }
+    .wyzx-btn-right { width: 100px; height: 30px; line-height: 30px; font-size: 15px; top: 93px; }
+    .service-box-pic a p { font-size: 18px; }
+    .service-box-pic a p span { font-size: 13px; }
+	.service-box-pic a:hover p {
+	font-size:18px;
+	font-weight:normal;
+	color:#fff;
+	}
+.service-box-pic a:hover p span {
+	font-size:13px;
+	font-weight:normal;
+	color:#fff;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+   /*.company ul li { width: 50%; }*/
+   .company ul li p.p1 { width: 252px; }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+    .banner h3 .bg-line { left: 30.83%; }
+    .banner h3 .bg-line-right { left: 63.8%; }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .foot .footer div.foot-txt { margin-right: 3.8%; }
+    .footer .share { margin-left: 1%; }
+    .about-peap .peo-photo ul li h3 { padding: 10px 4%; }
+    .about-peap .peo-photo ul li p { padding: 10px 4% 16px 4%; }
+    .news-bd-list dl:hover .list-time-left { margin-left: -1%; }
+    .banner h3 .bg-line { left: 27.83%; }
+    .banner h3 .bg-line-right { left: 66%; }
+    .wyzx-btn-right { display: none; }
+ 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1160px) {
+    .banner h3 .bg-line { left: 22.83%; }
+    .banner h3 .bg-line-right { left: 69%; }
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 414px) {
+	
+    .logo { height: 40px; width: 40px; }
+    .serve-ba-box .box-xia { margin-top: 17%; }
+    .serve-ba-box .box-xia1 { margin-top: 12%; }
+    .head .nav { margin-top: 0; line-height: 50px; }
+    /* .head .nav ul .hidebtn span.bar-center { top:10px;}
+ .head .nav ul .hidebtn span.bar-bottom { top:20px;}
+ .head .nav ul .hidebtn { width:40px;}
+ .head .nav ul .hidebtn span { width:30px;}*/
+    .head .nav #nav { border: none; }
+    .customer-title { padding: 10px 0; margin: 10px auto 0 auto; }
+    .customer .customer-title p { font-size: 13px; }
+    .customer .customer-title h2 { font-size: 20px; }
+    .customer p.intr-txt { font-size: 13px; line-height: 23px; }
+    .ab-intr { margin: 15px auto; }
+    .ab-our .ab-our-box { width: 100%; margin: 15px auto; }
+    .ab-our .ab-our-box h4 { font-size: 16px; margin-top: 20px; line-height: 20px; }
+    .ab-our .ab-our-box h3 { font-size: 22px; line-height: 30px; margin-bottom: 10px; }
+    .ab-our .ab-our-box p { font-size: 12.5px; padding-bottom: 26px; }
+    .ab-our .ab-our-box { margin: 10px auto; }
+    .about-banner { background: url("../images/about_banner_02.jpg") no-repeat center; background-size: 414px 180px; }
+    .about-bn-bg { opacity: 0; height: 240px; }
+
+    .about-se-bg { opacity: 0; height: 206px; }
+    .ab-our { margin-bottom: 30px; }
+    .about-serv .wyzx-btn { font-size: 14px; width: 22%; left: 37%; height: 24px; line-height: 24px; }
+    .our-sliimg { width: 44%; }
+    .slient { margin: 30px auto; padding: 0; }
+    .our-slient-right { width: 100%; margin-top: 20px; text-align: justify; padding-left: 0; border: none; }
+    .our-cust-logo { margin-top: 0; }
+    .our-cust h2 { font-size: 24px; }
+    .about-peap { background: #efedee; }
+    .serve-banner .about-ba-txt { width: 26%; left: 36%; }
+    .serve-banner .about-ba-box { width: 73%; left: 13.42%; }
+    .our-cust-logo ul li { margin: 0 1px; width: 29%; padding: 5px 1.83%; }
+    .about-peap .customer-title span { margin: 10px auto; }
+    .peo-photo ul li { width: 100%; margin: 20px 0; margin-bottom: 0; }
+    .about-peap .peo-photo ul li h3 { padding: 5px 4%; font-size: 16px; }
+    .about-peap .peo-photo ul li p.ph-p1 { font-size: 12px; }
+    .about-peap .peo-photo ul li p { padding: 6px 4%; }
+    .peo-photo ul li:hover { margin-top: 20px; }
+    .customer-title { width: 90%; margin-bottom: 20px; }
+    .peo-photo { padding-bottom: 20px; }
+    .foot-txt-hi, .bdsharebuttonbox { display: none; }
+    .foot .footer { width: 90%; }
+    .foot { height: 70px; }
+    .foot .footer div.er { text-align: center; display: none; }
+    .foot .footer div.foot-txt { margin-right: 0; text-align: center; width: 100%; }
+    .er img { width: 80px; }
+    #head { height: 50px; }
+
+
+    /*案例*/
+    .banner h2 { top: 42%; font-size: 22px; }
+    .vr-banner h2 { top: 35%; }
+    .banner h3 { top: 65%; font-size: 18px; }
+    .banner { background: url("../images/case_banner_02.jpg") no-repeat center; background-size: 768px 280px; }
+    .banner img { opacity: 0; height: 180px; }
+    .customer-box .customer-box-brand { display: none; }
+    .customer-box .customer-box-brand ul li a { margin: 10px 0 10px 6px; padding: 4px 15px; }
+    .customer-box-intru { width: 90%; }
+
+    /*新闻*/
+    .news-banner { height: 180px; background: url("../images/news1.jpg") no-repeat center; }
+    .news-ban-deli { background: url("../images/news4.jpg") no-repeat center; }
+    .news-banner img { opacity: 0; }
+    .news-bd-sele a { margin-right: 15px; }
+    .news-bd-list dl dt { width: 100%; }
+    .news-bd-list dl dt img { width: 150%; }
+    .news-bd-list dl dd { margin-left: 0; width: 100%; }
+    .news-bd-list dl dd h5 { font-size: 16px; line-height: 24px; }
+    .news-bd-list dl dd p { font-size: 13px; }
+    .list-bd-time .list-time-left span { margin-top: 10px; font-size: 20px; }
+    .list-bd-time .list-time-left span i { font-size: 14px; }
+    .list-bd-time .list-time-right i { margin-top: 14px; }
+    .page-box-news { margin-bottom: 48px; }
+    .list-bd-time { display: none; }
+    .news-bd-list dl dt span { display: none; }
+    .news-bd-sele { margin-bottom:14px; }
+    /*关于我们*/
+    .content-banner { height: 180px; }
+    /*新闻详情*/
+    .news img.font-22 { width: 60%; line-height: 18px; }
+    .news-deta center h2 { line-height: 30px; }
+    .news-details { width: 90%; }
+    .news-details h6 { font-size: 13px; line-height: 30px; }
+    .news-details p { font-size: 13px; line-height: 24px; }
+    .news-details-foot { width: 84%; }
+    .details-foot-left { margin-right: 0; }
+    .news-details-foot a { margin-right: 2px; }
+    .details-foot-right { font-size: 14px; }
+
+    /*服务*/
+    .servi-banner { background: url("../images/serve_banner1.png") no-repeat center; background-size: 414px 260px; }
+    .servi-banner-pic { opacity: 0; height: 180px; }
+    .serve-banner .serve-ba-box { left: 14.53%; width: 73%; }
+    .serve-banner .serve-ba-txt { left: 35%; width: 32%; }
+    .service-box h3 { font-size: 18px; margin-top: 16px; line-height: 42px; }
+    .service-box p { margin-bottom: 20px; font-size: 14px; }
+    .service-box ul li i { background-size: 312.5px 11.5px; width: 15px; height: 11.5px; margin-top: 6px; }
+    .service-box ul li i.sevi-icon-2 { background-position: -72.5px 0; }
+    .service-box ul li i.sevi-icon-3 { background-position: -141.5px 0; }
+    .service-box ul li i.sevi-icon-4 { background-position: -209.5px 0; }
+    .service-box ul li i.sevi-icon-5 { background-position: -280px 0; }
+    .service-box ul li { font-size: 12px;  }
+    .service-box { width: 90%; }
+    .service-box ul.gwdz { width: 90%; padding-left: 10%; display: none; }
+    .service-box-pic { margin-top: 20px; }
+    .wyzx-btn-right { position: static; float: none; }
+    .service-box-pic div { width: 100%; margin: 5px auto; }
+    .service-box-pic div p { font-size: 18px; }
+    .project-box .project-hd h3 { font-size: 20px; line-height: 30px; padding-top: 20px; }
+    .project-box .project-hd h4 { font-size: 14px; }
+    .project-box .project-hd .wyzx-btn { width: 100px; margin-top: 20px; }
+    .project-hd .lxg-case { margin-top: 30px; font-size: 15px; }
+    .project-bd-phone { width: 36%; margin-top: 0; margin-left: 7%; margin-right: 7%; }
+	.project-bd-phone p { color:#fff;}
+    .project-bd { margin-top: 20px; }
+    .project-bd-pc { width: 100%; margin-top: 10px; }
+    .title-solute h1 { font-size: 58px; }
+    .solute { width: 90%; margin-bottom: 30px; }
+    .title-solute h3 span { font-size: 28px; line-height: 28px; }
+    .title-solute h3 { font-size: 19px; line-height: 20px; margin-top: 12px; }
+    .solute-pic div.solute-pic1 { width: 100%; }
+    .solute-pic1 p { font-size: 18px; }
+    .solute-pic1 p span { font-size: 16px; margin: 8px auto; }
+    /*vr*/
+    .vr-banner { height: 180px; background: url("../images/VR_banner.jpg") no-repeat center center; background-size: 100% 180px; }
+    .vr-top { height: 56px; }
+
+    .about-serv { height: 280px; }
+    .about-serv .atit1 { font-size: 18px; margin-top: 50px; }
+    .about-serv .atit2 { font-size: 14px; }
+    .about-serv .atit3 { font-size: 12px; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .project { height: 420px; }
+    .wai { height: 528px; }
+    .title-solute { margin-top: 0; }
+    .project-bd-pc { width: 57%; }
+    .project-bd-phone { width: 13.8%; margin-top: 42px; }
+    .solute-pic1 p { font-size: 16px; }
+    .solute-pic1 p span { font-size: 14px; }
+    .title-solute h1 { font-size: 64px; }
+    .title-solute h3 { font-size: 20px; line-height: 20px; margin-top: 6px; }
+    h4.h4 { font-size: 16px; }
+    .project-box .project-hd h4 { font-size: 18px; }
+    .project-box .project-hd h3 { font-size: 22px; }
+    .title-solute h3 span { font-size: 30px; }
+    .project-bd-phone { margin-right: 7.4%; }
+    .footer .share { margin-top: 20px; margin-left: 0; }
+    .foot .footer div.er { text-align: center; }
+    .er img { width: 84px; }
+    .wyzx-btn-right { display: none; }
+    .service-box-pic li { width: 46%; margin: 2% 2%; }
+    .ab-our .ab-our-box h3 { font-size: 18px; }
+    .ab-our .ab-our-box p { font-size: 12px; }
+    .about-peap .peo-photo ul li p { display: none; }
+    .about-peap .peo-photo ul li p.ph-p1 { display: block; padding-bottom: 10px; }
+
+    .project-bd div p { font-size: 12px; }
+    .right-nav { width: 430px; }
+    .right-nav ul li { margin: 28px 0 28px 16%; }
+    .right-nav ul li a span i { width: 100px; }
+    /*.close-btn { width: 30%; }*/
+    .right-nav-box { margin-top: -284px; width: 300px; }
+    .about-768 { background: url("../images/about_banner_011.jpg") no-repeat center; background-size: 100% 388px; }
+    .about-768 .servi-banner-pic { opacity: 0; height: 388px; }
+    .serve-banner .serve-ba-txt { width: 18.93%; left: 40.5%; }
+    .serve-banner .serve-ba-box { width: 47.05%; left: 26%; }
+    .news-banner img { opacity: 0; }
+    .news-banner { background: url("../images/news _banner1.jpg") no-repeat center; background-size: 100% 388px; height: 388px; }
+    #myiframe { height: 380px; }
+    
+}
+@media screen and (min-width: 889px) and (max-width: 944px) {
+	.ab-our .ab-our-box p { min-height:120px; padding-bottom:20px; transition:all 1s;}
+	.ab-our { margin-bottom:40px;}
+	}
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+	.foot { height:98px;}
+    .foot-txt-hi { display: none; }
+    .footer .share { display: none; }
+    .foot .footer div.er { display: none; }
+    .foot .footer p { font-size: 14px; }
+    .foot .footer div.foot-txt { margin-right: 0; text-align: center; width: 100%; margin-top: 14px; }
+    .company ul li { width: 50%; }
+    .company ul li img { max-width: 80%; }
+    .company ul li p { font-size: 12px; color: #141414; line-height: 24px; }
+    .company ul li p.p1 { width: 260px; margin:0 auto; margin-top: 20px; }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+	.customer-title { padding-bottom:30px; margin-bottom:20px;}
+    .bg-line { width: 60px; }
+    .banner h2 span { padding-bottom: 18px; }
+    .banner h3 .bg-line { left: 17.6%; }
+    .banner h3 .bg-line-right { left: 74.83%; }
+    .customer-box .customer-box-brand { display: none; }
+	/*.customer-box .right-bar { display:none;}*/
+    .customer-box-intru li { width: 47.9%; }
+    .customer-box-intru li:nth-child(2) {display:none }
+    .customer p.intr-txt { font-size: 13px; }
+    .ab-our .ab-our-box { width: 41%; }
+    .customer .customer-title h2 { font-size: 20px; }
+    .about-serv img { height: 200px; width: 120%; }
+    .about-serv .wyzx-btn { font-size: 12px; }
+    .our-cust h2 { font-size: 22px; }
+    .about-peap .peo-photo ul li h3 { font-size: 15px; }
+    .about-peap .peo-photo ul li p.ph-p1 { font-size: 13px; }
+    .ab-our .ab-our-box h3 { font-size: 18px; }
+    .ab-our .ab-our-box p { font-size: 12px; }
+    .about-peap .peo-photo ul li p { display: none; }
+    .about-peap .peo-photo ul li p.ph-p1 { display: block; padding-bottom: 10px; }
+    .news img.font-22 { width: 40%; line-height: 18px; }
+    .news-deta center h2 { line-height: 30px; }
+    .about-768 { background: url("../images/about_banner_011.jpg") no-repeat center; background-size: 100% 310px; height: 310px; }
+    .about-768 .servi-banner-pic { opacity: 0; }
+    .serve-banner .serve-ba-txt { width: 26.93%; left: 35.5%; top: 41%; }
+    .serve-banner .serve-ba-box { width: 47.05%; left: 26%; top: 45%; }
+    .about-768 .serve-ba-txt { width: 20.93%; left: 39.5%; top: 41%; }
+    .news-banner { background: url("../images/news _banner1.jpg") no-repeat center; background-size: 100% 310px; height: 310px; }
+    .vr-banner { height: 310px; background-size: 100% 310px; }
+	.service-box >ul { margin-left:-44px;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .bg-line { width: 70px; }
+    .banner h3 .bg-line { left: 20.83%; }
+    .banner h3 .bg-line-right { left: 71%; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.silent-box .ab-intr p.intr-txt-11 { font-size:16px;}
+    .site i { top: 48%; }
+    .news .content-banner .adress { top: 58%; }
+    .banner h3 .bg-line { top:9px; left:3.83%;}
+	.banner h3 span { font-size:13px;}
+	.bg-line { width:40px;}
+    .banner h3 .bg-line-right { left:83.43%; top:9px; }
+    .banner h2 span { padding-bottom: 0; border-bottom: none; }
+	.right-nav ul li a span { height:28px;}
+	.right-nav-box { margin-top:-210px;}
+    .service-box-pic li { width: 100%; margin-top: 16px; }
+    .right-nav { width: 310px; }
+    .right-nav ul li a { font-size: 18px; /*line-height:20px;*/ }
+    .right-nav ul li a span em { font-size: 14px; width: 80px; }
+    .right-nav ul li { margin:0; margin-left: 46px; }
+    .right-nav ul li a span i { width: 80px; }
+    .close-btn { width: 45px; margin-top:20px; margin-right:20px; }
+    .news h2 { font-size: 22px; }
+    .alxq { width: 94%; }
+    .casexq { height: 66px; }
+    .xq-line { margin-top: 24px; }
+    .case-back { margin-top: 12px; margin-bottom: 15px; width: 90px; height: 30px; line-height: 30px; }
+	.newsd-back { margin-top:0; top:-25px;}
+	.news-details center { margin-bottom:14px;}
+    .casexq-txt h1 { font-size: 24px; }
+    .casexq-txt p { font-size: 12px; line-height: 20px; margin-bottom: 10px; }
+    .casexq-txt h6 { font-size: 14px; line-height: 26px; }
+    .fwwz { margin-bottom:30px; }
+    .head a { /*margin-top: 8px;*/ }
+	.banner p.p2 { top:79%;}
+	.banner .case-line { width:40px; margin-left:-20px;}
+    .head .nav .hidebtn { margin-top: 2px; }
+    #head { height: 56px; padding-top: 0; }
+    .con11 { padding-top: 56px; }
+    .head .nav ul .hidebtn { margin-top: 0; top: 8px; height: 40px; width: 40px; margin-top: 10px; }
+    .head a { background-size: 40px 40px; }
+    .head .nav ul .hidebtn span.bar-top { top: 13px; right: 10px; }
+    .head .nav ul .hidebtn span.bar-center { top: 20px; right: 10px; }
+    .head .nav ul .hidebtn span.bar-bottom { top: 27px; right: 10px; }
+    #myiframe { height: 220px; }
+    .head .nav ul { display: none; }
+    .customer-box-intru li { margin: 0; width: 100%; }
+    .banner .case-line { top:45%;}
+	.banner h3 { top:51%;}
+    .banner h2 { top:22%; font-size: 14px; }
+    .peo-photo ul li img { width:100%;}
+	.banner p:nth-child(5) { width:73%; margin-left:13%;}
+	.banner p { top:62%;}
+    .company ul li { width: 100%; margin-bottom: 30px; }
+    .company ul li img { max-width: 80%; }
+    .company ul li p { font-size: 12px; line-height: 20px; }
+    .company ul li p.p1 { width: 260px; margin-top: 20px; }
+    .silent-box .ab-intr p.intr-txt { width: 90%; text-align: justify; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1342px) {
+    .footer .share { display: none; }
+    .foot .footer .foot-txt-hi .share { display: block; }
+    .foot .footer .foot-txt .share { display: block; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+    .our-cust-logo ul li:nth-child(6n) { margin-right: 1px; }
+    .our-cust-logo ul li:nth-child(2n) { margin-right: 0; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .right-nav ul li { /*margin: 8px 0;*/ margin-left: 46px; }
+    .right-nav-box ul { margin-top: 70px; }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+
+    .foot .footer .foot-txt .share { display: none; }
+    .news-banner img { opacity: 0; }
+    .location .locont h3 { font-size: 22px; line-height: 1.2; }
+    .location .locont h6 { font-size: 14px; line-height: 1.6; margin: 0 auto; }
+    .loct-bottom .loc-left { width: 100%; margin-top:10px; }
+	.loct-bottom .loc-right { width:100%;}
+    .loct-bottom .loc-right0 { display:none; }
+	.loct-bottom .loc-right1 { display:block; }
+	.loct-bottom .loc-right p { margin-bottom:6px; line-height:24px; font-size:14px;}
+	.loct-bottom .loc-right h6 { font-size:16px;}
+	.loct-bottom .loc-right span { font-size:12px; line-height:22px;}
+    .loct-bottom { margin-top: 10px; }
+    .loct-bottom .loc-left form p input { height: 32px; line-height: 32px; margin-bottom: 10px; }
+    .loct-bottom .loc-left form p i.iconc { margin-top: 8px; }
+    .loct-bottom .loc-left form p textarea { line-height: 28px; font-size:12px;}
+	.loct-bottom { width:500px;}
+	.foot .footer p .hide-tel { display:block;}
+}
+@media screen and (min-width: 415px) and (max-width: 768px) {
+    .peo-photo ul li { width: 46%; margin: 20px 2%; margin-bottom: 0; }
+    .about-peap .peo-photo ul li h3 { padding: 5px 4%; font-size: 16px; }
+    .about-peap .peo-photo ul li p.ph-p1 { font-size: 12px; }
+    .about-peap .peo-photo ul li p { padding: 6px 4%; }
+    .peo-photo ul li:hover { margin-top: 20px; }
+    .our-cust-logo ul li { width: 24%; margin: 10px .5% 10px 0; }
+    .ab-our .ab-our-box { width: 100%; margin: 15px auto; }
+    .ab-our .ab-our-box h4 { font-size: 16px; margin-top: 20px; line-height: 20px; }
+    .ab-our .ab-our-box h3 { font-size: 22px; line-height: 30px; margin-bottom: 10px; }
+    .ab-our .ab-our-box p { font-size: 12.5px; padding-bottom: 26px; }
+    .ab-our .ab-our-box { margin: 10px auto; }
+    .peo-photo ul li img { width:100%;}
+	.frame { display:none;}
+	/*.location .locont { margin-top:-200px;}*/
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.layer { background: #043056; opacity: 0.5; filter: blur(3px); width:100%; height:100%;}
+	.location .locont h6 { width:84%;}
+	.loct-bottom .loc-right h6 { width:100%;}
+	.news-details center h3 { font-size:16px;}
+	.loct-bottom { width:84%;}
+	.location .locont { margin-top:-700px; position:static;}
+	.loct-bottom .loc-left form p input { padding-left:45px;}
+	.loct-bottom .loc-left form p textarea { /*text-indent:45px;*/padding-left: 45px; box-sizing: border-box;}
+	.right-fix { display:none;}
+	.foot { height:88px;}
+	.video-box { display:none;}
+	.right-nav ul li:last-child { display:block;}
+	.location { position:relative;}
+	.bg-video { height:800px;}
+	.location .locmb { height:800px; display:none;}
+	.bg-video { position:static; }
+	
+	
+	
+	}
+@media screen and (max-width: 374px) and (min-width: 320px){
+.right-nav-box {
+    margin-top: -260px;
+}
+}

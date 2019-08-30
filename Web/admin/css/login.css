@@ -1,0 +1,65 @@
+@charset 'utf-8';
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body,h1,ul,dl,dd,td,th
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	line-height: 1.6;
+	font-family: sans-serif,"Microsoft YaHei","Helvetica Neue","Hiragino Sans GB","\9ED1\4F53",Arial;
+	color: #222;
+	font-size: 14px;
+	background-color: #e7e8eb;
+}
+
+#login{
+	width: 300px;
+	height:200px;
+	background: #f60;
+	padding:10px;
+
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10%;
+}
+
+form{
+	width:100%;
+	height:100%;
+}
+input[type=text],input[type=password]{
+	width:100%;
+	height:30px;
+	border-radius: 3px;
+	border:none;
+	margin-top:10px;
+	text-indent: 1em;
+	font-size: 16px;
+}
+dd.code input[type=text],input[name=sessionCode]{
+	width:48%;
+	text-transform:uppercase; 
+}
+input[type=submit]{
+	width:100%;
+	height:35px;
+	background: green;
+	border:none;
+	margin-top: 20px;
+	font-size: 16px;
+	color:#fff;
+	cursor:pointer;
+}
+dd.code img{
+	cursor:pointer;
+	float:right;
+	margin-top: 10px;
+}
+
+
+
